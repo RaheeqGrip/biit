@@ -1,11 +1,11 @@
 {
-  "family": "devopsmolvi-ecs-tasks",
+  "family": "raheeq_devops",
   "networkMode": "awsvpc",
-  "executionRoleArn": "arn:aws:iam::559050236729:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::124146831274:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
-      "name": "nodeapp",
-      "image": "559050236729.dkr.ecr.us-east-1.amazonaws.com/dev/nodeimages:latest",
+      "name": "nginx",
+      "image": "124146831274.dkr.ecr.eu-north-1.amazonaws.com/dev/nodeimage",
       "essential": true,
       "portMappings": [
         {
