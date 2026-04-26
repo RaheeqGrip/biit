@@ -31,7 +31,7 @@ jobs:
             docker push 124146831274.dkr.ecr.eu-north-1.amazonaws.com/dev/nodeimage:latest
 
       - name: Revisions on ECS with Updated Docker Images
-        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
         with:
           task-definition: ecs-task.json
           service: devopsmolvi-ecs-srv
